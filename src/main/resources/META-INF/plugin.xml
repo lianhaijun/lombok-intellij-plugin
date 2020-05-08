@@ -56,6 +56,9 @@
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.log.CustomLogProcessor"/>
 
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.DataProcessor"/>
+    
+    <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.CommonCodeProcessor"/>
+    <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.CommonCodeFieldProcessor"/>
     <applicationService
       serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.EqualsAndHashCodeProcessor"/>
     <applicationService serviceImplementation="de.plushnikov.intellij.plugin.processor.clazz.GetterProcessor"/>

@@ -1,6 +1,9 @@
 package de.plushnikov.intellij.plugin.processor;
 
 import com.intellij.openapi.components.ServiceManager;
+
+import de.plushnikov.intellij.plugin.processor.clazz.CommonCodeFieldProcessor;
+import de.plushnikov.intellij.plugin.processor.clazz.CommonCodeProcessor;
 import de.plushnikov.intellij.plugin.processor.clazz.DataProcessor;
 import de.plushnikov.intellij.plugin.processor.clazz.EqualsAndHashCodeProcessor;
 import de.plushnikov.intellij.plugin.processor.clazz.GetterProcessor;
@@ -74,6 +77,9 @@ public class LombokProcessorManager {
       ServiceManager.getService(SetterProcessor.class),
       ServiceManager.getService(ToStringProcessor.class),
       ServiceManager.getService(WitherProcessor.class),
+      
+      ServiceManager.getService(CommonCodeProcessor.class),
+      ServiceManager.getService(CommonCodeFieldProcessor.class),
 
       ServiceManager.getService(BuilderPreDefinedInnerClassFieldProcessor.class),
       ServiceManager.getService(BuilderPreDefinedInnerClassMethodProcessor.class),
