@@ -9,3 +9,7 @@ distro/
 *.iml
 *.ipr
 *.iws
+.classpath
+.project
+.settings/*
+bin/
